@@ -235,9 +235,7 @@ The application uses the **Judge0 API** for seamless code execution:
 <div align="center">
   <h3>🎉 Built with ❤️ by</h3>
   <p>
-    <a href="https://github.com/VinodRathod1">
-   
-    </a>
+    <a href="https://github.com/VinodRathod1"> </a>
   </p>
   <h3>VinodRathod</h3>
   
