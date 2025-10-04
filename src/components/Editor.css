@@ -1,0 +1,147 @@
+/* Layout */
+.editor-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  background-color: #1c1e29;
+  color: #f8f8f2;
+  height: 100vh;
+  box-sizing: border-box;
+  border-radius: 0.25rem;
+  font-family: 'Fira Code', monospace;
+}
+
+/* Toolbar */
+.editor-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 30rem;
+  background-color: #282a36;
+  padding: 0.5rem 1rem;
+  border: 1px solid #424242;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0.75, 0.75, 0.75, 0.75);
+  margin-bottom: 1rem;
+}
+
+/* Dropdown & Button */
+.language-select,
+.run-button {
+  font-size: 0.95rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(1, 1, 1, 1);
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.language-select {
+  background-color: #1c1e29;
+  color: #fff;
+  border: 1px solid #4b5563;
+}
+
+.language-select:focus {
+  border-color: #4aed88;
+}
+
+.language-select option {
+  background-color: #282a36;
+  color: #ffffff;
+}
+
+.run-button {
+  background-color: #4aed88;
+  color: #1c1e29;
+}
+
+.run-button:hover {
+  background-color: #2b824c;
+}
+
+/* Input/Output Section */
+.editor-io {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  flex-shrink: 0;
+  height: 30vh;
+  max-height: 30vh;
+  width: 100%;
+}
+
+/* Input & Output Boxes */
+.editor-input,
+.editor-output {
+  display: flex;
+  flex-direction: column;
+  background-color: #282a36;
+  border: 1px solid #424242;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* Input Box */
+.editor-input textarea {
+  flex: 1;
+  background-color: #1c1e29;
+  color: #f8f8f2;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.95rem;
+  resize: none;
+  outline: none;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+/* Output Box */
+.editor-output pre {
+  flex: 1;
+  background-color: #1c1e29;
+  color: #a6e3a1;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.95rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  height: 100%;
+  box-sizing: border-box;
+  border: none;
+}
+
+/* Scrollbars */
+textarea::-webkit-scrollbar,
+pre::-webkit-scrollbar {
+  width: 6px;
+}
+
+textarea::-webkit-scrollbar-thumb,
+pre::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 3px;
+}
+
+/* Responsive Layout */
+@media (max-width: 750px) {
+  .editor-io {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .editor-input,
+  .editor-output {
+    min-height: 100px;
+    max-height: 200px;
+  }
+}
