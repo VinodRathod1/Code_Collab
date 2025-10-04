@@ -235,8 +235,8 @@ The application uses the **Judge0 API** for seamless code execution:
 <div align="center">
   <h3>🎉 Built with ❤️ by</h3>
   <p>
-    <a href="https://github.com/Aakashkethavath">
-      <img src="https://img.shields.io/badge/GitHub-Akash__ktvth-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Profile"/>
+    <a href="https://github.com/VinodRathod1">
+   <h3>VinodRathod</h3>
     </a>
   </p>
   
