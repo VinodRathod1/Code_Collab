@@ -236,9 +236,10 @@ The application uses the **Judge0 API** for seamless code execution:
   <h3>🎉 Built with ❤️ by</h3>
   <p>
     <a href="https://github.com/VinodRathod1">
-   <h3>VinodRathod</h3>
+   
     </a>
   </p>
+  <h3>VinodRathod</h3>
   
 </div>
 
